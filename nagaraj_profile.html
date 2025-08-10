@@ -1,0 +1,897 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>NAGARAJ H - ADAS & Adaptive AUTOSAR Engineer</title>
+    <meta
+      name="description"
+      content="Portfolio of NAGARAJ H, a software engineer specializing in Automotive ADAS and Adaptive AUTOSAR."
+    />
+    <link
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css"
+      rel="stylesheet"
+    />
+    <script src="https://cdn.tailwindcss.com"></script>
+    <script>
+      tailwind.config = {
+        theme: {
+          extend: {
+            colors: {
+              primary: "#0055A4",
+              accent: "#F5A623",
+              backgroundDark: "#1E1E1E",
+              textLight: "#E0E0E0",
+              cardDark: "#2C2C2C",
+              borderDark: "#3A3A3A",
+            },
+            fontFamily: {
+              inter: ["Inter", "sans-serif"],
+            },
+          },
+        },
+      };
+    </script>
+    <style>
+      @import url("https://fonts.googleapis.com/css2?family=Inter:wght@400;500;700;900&display=swap");
+      html {
+        scroll-behavior: smooth;
+      }
+      body {
+        font-family: "Inter", sans-serif;
+        background-color: #1e1e1e;
+        color: #e0e0e0;
+        transition: background-color 0.3s ease, color 0.3s ease;
+      }
+      .fade-in {
+        opacity: 0;
+        transform: translateY(20px);
+        transition: opacity 0.6s ease-out, transform 0.6s ease-out;
+      }
+      .is-visible {
+        opacity: 1;
+        transform: translateY(0);
+      }
+      .nav-link.active {
+        color: #f5a623;
+      }
+      .timeline-item::before {
+        content: "";
+        position: absolute;
+        left: 0;
+        top: 50%;
+        transform: translateY(-50%);
+        width: 1rem;
+        height: 1rem;
+        border-radius: 50%;
+        background-color: #0055a4;
+        border: 2px solid #f5a623;
+        z-index: 10;
+      }
+      .timeline-item:not(:last-child)::after {
+        content: "";
+        position: absolute;
+        left: 0.45rem;
+        top: 50%;
+        height: 100%;
+        width: 2px;
+        background-color: #f5a623;
+        z-index: 5;
+      }
+    </style>
+  </head>
+  <body>
+    <!-- Sticky Navigation Bar -->
+    <header
+      class="sticky top-0 z-50 shadow-lg transition-colors duration-300 bg-backgroundDark border-b border-borderDark"
+    >
+      <nav
+        class="container mx-auto px-4 py-3 flex items-center justify-between"
+      >
+        <a href="#" class="text-2xl font-bold text-primary">NAGARAJ H</a>
+        <div class="hidden md:flex space-x-6 items-center">
+          <a
+            href="#about"
+            class="nav-link font-medium text-textLight hover:text-accent transition-colors duration-300"
+            >About</a
+          >
+          <a
+            href="#skills"
+            class="nav-link font-medium text-textLight hover:text-accent transition-colors duration-300"
+            >Skills</a
+          >
+          <a
+            href="#experience"
+            class="nav-link font-medium text-textLight hover:text-accent transition-colors duration-300"
+            >Experience</a
+          >
+          <a
+            href="#projects"
+            class="nav-link font-medium text-textLight hover:text-accent transition-colors duration-300"
+            >Projects</a
+          >
+          <a
+            href="#education"
+            class="nav-link font-medium text-textLight hover:text-accent transition-colors duration-300"
+            >Education</a
+          >
+          <a
+            href="#contact"
+            class="nav-link font-medium text-textLight hover:text-accent transition-colors duration-300"
+            >Contact</a
+          >
+        </div>
+        <div class="flex items-center">
+          <button
+            id="mobile-menu-button"
+            class="md:hidden p-2 rounded-full hover:bg-cardDark focus:outline-none"
+          >
+            <i class="fas fa-bars text-2xl text-textLight"></i>
+          </button>
+        </div>
+      </nav>
+      <!-- Mobile Menu -->
+      <div
+        id="mobile-menu"
+        class="hidden md:hidden flex-col items-center py-4 bg-backgroundDark border-t border-borderDark"
+      >
+        <a
+          href="#about"
+          class="nav-link block py-2 text-textLight hover:text-accent transition-colors duration-300"
+          >About</a
+        >
+        <a
+          href="#skills"
+          class="nav-link block py-2 text-textLight hover:text-accent transition-colors duration-300"
+          >Skills</a
+        >
+        <a
+          href="#experience"
+          class="nav-link block py-2 text-textLight hover:text-accent transition-colors duration-300"
+          >Experience</a
+        >
+        <a
+          href="#projects"
+          class="nav-link block py-2 text-textLight hover:text-accent transition-colors duration-300"
+          >Projects</a
+        >
+        <a
+          href="#education"
+          class="nav-link block py-2 text-textLight hover:text-accent transition-colors duration-300"
+          >Education</a
+        >
+        <a
+          href="#contact"
+          class="nav-link block py-2 text-textLight hover:text-accent transition-colors duration-300"
+          >Contact</a
+        >
+      </div>
+    </header>
+
+    <main class="min-h-screen">
+      <!-- Hero Section -->
+      <section
+        id="hero"
+        class="relative h-screen flex items-center justify-center text-center p-4 bg-backgroundDark overflow-hidden"
+      >
+        <div class="z-10 fade-in">
+          <h1
+            class="text-4xl sm:text-6xl md:text-7xl font-extrabold text-white mb-4 leading-tight tracking-tighter"
+          >
+            NAGARAJ H
+          </h1>
+          <h2
+            class="text-xl sm:text-2xl md:text-3xl font-medium text-primary mb-2"
+          >
+            ADAS & Adaptive AUTOSAR Software Engineer
+          </h2>
+          <p class="text-md sm:text-lg text-textLight mb-8 max-w-2xl mx-auto">
+            “Building reliable, real-time automotive systems from concept to
+            production.”
+          </p>
+          <div
+            class="flex flex-col sm:flex-row justify-center space-y-4 sm:space-y-0 sm:space-x-4"
+          >
+            <!-- Download PDF button -->
+            <a
+              href="https://github.com/nagarajgh/nagaraj-profile/raw/main/profile.pdf"
+              download="profile.pdf"
+              class="cta-button bg-primary text-white font-semibold py-3 px-8 rounded-full shadow-lg hover:bg-blue-700 transition-colors duration-300"
+            >
+              Download Resume
+            </a>
+            <a
+              href="#contact"
+              class="cta-button bg-transparent border-2 border-primary text-primary font-semibold py-3 px-8 rounded-full shadow-lg hover:bg-primary hover:text-white transition-colors duration-300"
+            >
+              Contact Me
+            </a>
+          </div>
+        </div>
+      </section>
+
+      <!-- About Me Section -->
+      <section
+        id="about"
+        class="py-20 p-4 bg-cardDark border-t border-borderDark"
+      >
+        <div class="container mx-auto max-w-5xl">
+          <h2 class="text-4xl font-bold text-center mb-12 text-white fade-in">
+            About Me
+          </h2>
+          <div
+            class="flex flex-col md:flex-row items-center md:space-x-12 fade-in"
+          >
+            <div class="md:w-1/3 mb-8 md:mb-0 text-center">
+              <div
+                class="w-48 h-48 mx-auto bg-gray-600 rounded-full overflow-hidden shadow-lg border-2 border-accent"
+              >
+                <img
+                  src="profile.png"
+                  alt="Profile Photo of Nagaraj H"
+                  class="object-cover w-full h-full"
+                  onerror="this.onerror=null; this.src='https://placehold.co/192x192/4B5563/FFFFFF?text=Photo';"
+                />
+              </div>
+            </div>
+            <div class="md:w-2/3">
+              <p class="text-lg text-textLight leading-relaxed mb-6">
+                Experienced software engineer skilled in C++, Adaptive AUTOSAR,
+                and simulation frameworks like SIL/HiL. Passionate about
+                developing reliable, real-time embedded and cross-platform
+                applications with a strong focus on testing and quality. Eager
+                to contribute to innovative projects that create real-world
+                impact.
+              </p>
+              <h3 class="text-2xl font-semibold mb-4 text-white">
+                Key Career Highlights
+              </h3>
+              <ul
+                class="list-disc list-inside text-textLight text-lg space-y-2"
+              >
+                <li>
+                  Monitored daily test regressions and debugged issues in test
+                  logic using NVIDIA’s Quality Console and Jenkins.
+                </li>
+                <li>
+                  Designed and implemented a custom decoder and data extractor
+                  for Bordnet, converting CAN files to XML and CSV formats.
+                </li>
+                <li>
+                  Implemented C++ Adaptive AUTOSAR applications for HPC-C
+                  (Cluster), including a Warning and Chime Application.
+                </li>
+                <li>
+                  Analyzed functional requirements for virtual physiotherapy,
+                  and planned and evaluated technologies like MediaPipe Pose.
+                </li>
+              </ul>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <!-- Skills Section -->
+      <section
+        id="skills"
+        class="py-20 p-4 bg-backgroundDark border-t border-borderDark"
+      >
+        <div class="container mx-auto max-w-5xl">
+          <h2 class="text-4xl font-bold text-center mb-12 text-white fade-in">
+            Technical Skills
+          </h2>
+          <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
+            <!-- Skills Category Card -->
+            <div
+              class="bg-cardDark p-8 rounded-lg shadow-xl border border-borderDark transition-transform transform hover:scale-105 fade-in"
+            >
+              <h3 class="text-2xl font-bold text-primary mb-4">
+                Automotive & ADAS
+              </h3>
+              <ul class="text-textLight space-y-2">
+                <li>
+                  <i class="fas fa-car-side text-accent mr-2"></i> Adaptive
+                  Cruise Control
+                </li>
+                <li>
+                  <i class="fas fa-road text-accent mr-2"></i> Lane Keep Assist
+                </li>
+                <li>
+                  <i class="fas fa-car-crash text-accent mr-2"></i> Automatic
+                  Emergency Braking
+                </li>
+                <li>
+                  <i class="fas fa-steering-wheel text-accent mr-2"></i> Highway
+                  Pilot
+                </li>
+                <li>
+                  <i class="fas fa-traffic-light text-accent mr-2"></i> Urban
+                  Driving Assist
+                </li>
+              </ul>
+            </div>
+            <!-- Skills Category Card -->
+            <div
+              class="bg-cardDark p-8 rounded-lg shadow-xl border border-borderDark transition-transform transform hover:scale-105 fade-in"
+            >
+              <h3 class="text-2xl font-bold text-primary mb-4">Programming</h3>
+              <ul class="text-textLight space-y-2">
+                <li><i class="fas fa-code text-accent mr-2"></i> C++, C</li>
+                <li>
+                  <i class="fas fa-sync-alt text-accent mr-2"></i>
+                  Multithreading, IPC
+                </li>
+                <li>
+                  <i class="fas fa-exchange-alt text-accent mr-2"></i> RESTful
+                  APIs
+                </li>
+                <li>
+                  <i class="fas fa-mobile-alt text-accent mr-2"></i> Mobile App
+                  Development
+                </li>
+              </ul>
+            </div>
+            <!-- Skills Category Card -->
+            <div
+              class="bg-cardDark p-8 rounded-lg shadow-xl border border-borderDark transition-transform transform hover:scale-105 fade-in"
+            >
+              <h3 class="text-2xl font-bold text-primary mb-4">Platforms</h3>
+              <ul class="text-textLight space-y-2">
+                <li>
+                  <i class="fas fa-microchip text-accent mr-2"></i> QNX,
+                  Embedded Linux
+                </li>
+                <li><i class="fab fa-windows text-accent mr-2"></i> Windows</li>
+              </ul>
+            </div>
+            <!-- Skills Category Card -->
+            <div
+              class="bg-cardDark p-8 rounded-lg shadow-xl border border-borderDark transition-transform transform hover:scale-105 fade-in"
+            >
+              <h3 class="text-2xl font-bold text-primary mb-4">Tools</h3>
+              <ul class="text-textLight space-y-2">
+                <li>
+                  <i class="fas fa-toolbox text-accent mr-2"></i> Vector Canoe,
+                  Davinci Developer
+                </li>
+                <li>
+                  <i class="fas fa-terminal text-accent mr-2"></i> QNX
+                  Momentics, GDB, Wireshark
+                </li>
+                <li><i class="fas fa-cube text-accent mr-2"></i> Unity</li>
+              </ul>
+            </div>
+            <!-- Skills Category Card -->
+            <div
+              class="bg-cardDark p-8 rounded-lg shadow-xl border border-borderDark transition-transform transform hover:scale-105 fade-in"
+            >
+              <h3 class="text-2xl font-bold text-primary mb-4">Protocols</h3>
+              <ul class="text-textLight space-y-2">
+                <li>
+                  <i class="fas fa-network-wired text-accent mr-2"></i> CAN,
+                  Ethernet
+                </li>
+              </ul>
+            </div>
+            <!-- Skills Category Card -->
+            <div
+              class="bg-cardDark p-8 rounded-lg shadow-xl border border-borderDark transition-transform transform hover:scale-105 fade-in"
+            >
+              <h3 class="text-2xl font-bold text-primary mb-4">
+                Build/CI & Methodologies
+              </h3>
+              <ul class="text-textLight space-y-2">
+                <li>
+                  <i class="fas fa-cogs text-accent mr-2"></i> CMake, Bazel,
+                  Jenkins
+                </li>
+                <li>
+                  <i class="fas fa-stream text-accent mr-2"></i> Agile (Jira,
+                  Confluence)
+                </li>
+              </ul>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <!-- Experience Section -->
+      <section
+        id="experience"
+        class="py-20 p-4 bg-cardDark border-t border-borderDark"
+      >
+        <div class="container mx-auto max-w-5xl">
+          <h2 class="text-4xl font-bold text-center mb-12 text-white fade-in">
+            Experience
+          </h2>
+          <div class="relative pl-12 timeline-container">
+            <!-- Timeline Item: NVIDIA -->
+            <div class="timeline-item mb-16 relative">
+              <div
+                class="p-6 ml-8 bg-backgroundDark rounded-lg shadow-lg border border-borderDark fade-in"
+              >
+                <div class="flex justify-between items-center mb-2">
+                  <h3 class="text-xl font-bold text-primary">
+                    Software Engineer - NVIDIA
+                  </h3>
+                  <span class="text-sm text-gray-400"
+                    >Feb 2025 – June 2025</span
+                  >
+                </div>
+                <p class="text-lg font-semibold text-white mb-2">
+                  Project: NDAS (Automotive ADAS)
+                </p>
+                <p class="text-textLight mb-4">
+                  A robust driver-assistance system built around the dwdrive
+                  automotive chip, focusing on planning and control
+                  functionalities. The project included rigorous unit testing
+                  with GTest/GMock, code coverage analysis via LCOV, and builds
+                  orchestrated through Bazel.
+                </p>
+                <details class="text-textLight">
+                  <summary
+                    class="font-semibold cursor-pointer hover:text-accent transition-colors duration-300"
+                  >
+                    Responsibilities
+                  </summary>
+                  <ul class="list-disc list-inside mt-2 ml-4 space-y-1">
+                    <li>
+                      Monitored and analyzed daily test regressions using
+                      NVIDIA’s Quality Console, reproducing failures locally or
+                      tracing root causes in Jenkins CI pipelines.
+                    </li>
+                    <li>
+                      Diagnosed issues in test logic and build flows by
+                      debugging logs and configurations in the Bazel-based build
+                      system.
+                    </li>
+                    <li>
+                      Measured and reported unit test code coverage for the
+                      Planning and Control module of the NDAS system using LCOV.
+                    </li>
+                  </ul>
+                </details>
+              </div>
+            </div>
+            <!-- Timeline Item: Aptiv RESIM -->
+            <div class="timeline-item mb-16 relative">
+              <div
+                class="p-6 ml-8 bg-backgroundDark rounded-lg shadow-lg border border-borderDark fade-in"
+              >
+                <div class="flex justify-between items-center mb-2">
+                  <h3 class="text-xl font-bold text-primary">
+                    Software Engineer - Aptiv Components
+                  </h3>
+                  <span class="text-sm text-gray-400"
+                    >Sept 2024 – Jan 2025</span
+                  >
+                </div>
+                <p class="text-lg font-semibold text-white mb-2">
+                  Project: RESIM (Software-in-the-Loop Framework)
+                </p>
+                <p class="text-textLight mb-4">
+                  A Software-in-the-Loop (SIL) framework designed for real-time
+                  simulation and validation of automotive functions. The system
+                  integrates RESIM and Bordnet tools to decode and process CAN
+                  signals.
+                </p>
+                <details class="text-textLight">
+                  <summary
+                    class="font-semibold cursor-pointer hover:text-accent transition-colors duration-300"
+                  >
+                    Responsibilities
+                  </summary>
+                  <ul class="list-disc list-inside mt-2 ml-4 space-y-1">
+                    <li>
+                      Contributed to the RESIM project across SiL, HiL, and
+                      Virtual Validation environments.
+                    </li>
+                    <li>
+                      Designed and implemented a custom decoder and data
+                      extractor for Bordnet, converting CAN files into XML and
+                      CSV formats.
+                    </li>
+                    <li>
+                      Created and executed unit tests using GTest/GMock with a
+                      1:3 test ratio, achieving over 90% code coverage.
+                    </li>
+                  </ul>
+                </details>
+              </div>
+            </div>
+            <!-- Timeline Item: Aptiv HPC -->
+            <div class="timeline-item mb-16 relative">
+              <div
+                class="p-6 ml-8 bg-backgroundDark rounded-lg shadow-lg border border-borderDark fade-in"
+              >
+                <div class="flex justify-between items-center mb-2">
+                  <h3 class="text-xl font-bold text-primary">
+                    Software Engineer - Aptiv Components
+                  </h3>
+                  <span class="text-sm text-gray-400">Aug 2023 – Aug 2024</span>
+                </div>
+                <p class="text-lg font-semibold text-white mb-2">
+                  Project: HPC Cluster - Adaptive AUTOSAR
+                </p>
+                <p class="text-textLight mb-4">
+                  A project based on Adaptive AUTOSAR for Mahindra & Mahindra
+                  XEV BE 6 & 9E, where applications are developed for ADAS,
+                  ARHUD, and HMI.
+                </p>
+                <details class="text-textLight">
+                  <summary
+                    class="font-semibold cursor-pointer hover:text-accent transition-colors duration-300"
+                  >
+                    Responsibilities
+                  </summary>
+                  <ul class="list-disc list-inside mt-2 ml-4 space-y-1">
+                    <li>
+                      Implemented C++ Adaptive AUTOSAR applications for HPC-C,
+                      including a Warning and Chime Application.
+                    </li>
+                    <li>
+                      Debugging the software using QNX Momentics IDE, log
+                      analysis, performance profiling to optimize system
+                      response and stability.
+                    </li>
+                    <li>
+                      Triaging customer defect issues and integrating Adaptive
+                      AUTOSAR applications with the QNX platform stack.
+                    </li>
+                  </ul>
+                </details>
+              </div>
+            </div>
+            <!-- Timeline Item: Hyconsoft -->
+            <div class="timeline-item relative">
+              <div
+                class="p-6 ml-8 bg-backgroundDark rounded-lg shadow-lg border border-borderDark fade-in"
+              >
+                <div class="flex justify-between items-center mb-2">
+                  <h3 class="text-xl font-bold text-primary">
+                    Software Engineer - Hyconsoft India
+                  </h3>
+                  <span class="text-sm text-gray-400"
+                    >Jan 2022 – July 2023</span
+                  >
+                </div>
+                <p class="text-lg font-semibold text-white mb-2">
+                  Project: Physiosight
+                </p>
+                <p class="text-textLight mb-4">
+                  An internal project that delivers virtual physiotherapy using
+                  posture tracking and real-time motion feedback, leveraging
+                  computer vision and biomechanical analysis.
+                </p>
+                <details class="text-textLight">
+                  <summary
+                    class="font-semibold cursor-pointer hover:text-accent transition-colors duration-300"
+                  >
+                    Responsibilities
+                  </summary>
+                  <ul class="list-disc list-inside mt-2 ml-4 space-y-1">
+                    <li>
+                      Analyzed functional and technical requirements for virtual
+                      physiotherapy use cases, including posture correction and
+                      motion tracking.
+                    </li>
+                    <li>
+                      Planned and evaluated appropriate technologies, including
+                      selecting a suitable ML model for human pose detection
+                      (e.g., MediaPipe Pose).
+                    </li>
+                    <li>
+                      Performed rigorous testing using both mobile simulators
+                      and real devices to validate performance and user
+                      experience.
+                    </li>
+                  </ul>
+                </details>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <!-- Projects Section -->
+      <section
+        id="projects"
+        class="py-20 p-4 bg-backgroundDark border-t border-borderDark"
+      >
+        <div class="container mx-auto max-w-5xl">
+          <h2 class="text-4xl font-bold text-center mb-12 text-white fade-in">
+            Featured Projects
+          </h2>
+          <div class="grid md:grid-cols-2 gap-8">
+            <!-- Highlighted Project Card: HPC Cluster -->
+            <div
+              class="bg-cardDark p-6 rounded-lg shadow-lg border-2 border-accent transition-transform transform hover:scale-105 fade-in col-span-1 md:col-span-2"
+            >
+              <h3 class="text-3xl font-bold text-accent mb-2">
+                HPC Cluster - Adaptive AUTOSAR
+              </h3>
+              <p class="text-xl font-semibold text-white mb-2">
+                Software Engineer | Aug 2023 - Aug 2024
+              </p>
+              <p class="text-textLight mb-4">
+                A project based on Adaptive AUTOSAR for Mahindra & Mahindra XEV
+                BE 6 & 9E, where applications are developed for ADAS, ARHUD, and
+                HMI.
+              </p>
+              <p class="font-semibold text-white">
+                Technologies: C++, Adaptive AUTOSAR, QNX, Davinci Developer,
+                Vector Tools
+              </p>
+            </div>
+            <!-- Project Card: NDAS -->
+            <div
+              class="bg-cardDark p-6 rounded-lg shadow-lg border border-borderDark fade-in"
+            >
+              <h3 class="text-2xl font-bold text-primary mb-2">NDAS Project</h3>
+              <p class="text-lg font-semibold text-white mb-2">
+                Software Engineer | Feb 2025 - June 2025
+              </p>
+              <p class="text-textLight mb-4">
+                A robust driver-assistance system built around the dwdrive
+                automotive chip, focusing on planning and control
+                functionalities. The project included rigorous unit testing with
+                GTest/GMock, code coverage analysis via LCOV, and builds
+                orchestrated through Bazel.
+              </p>
+              <p class="font-semibold text-white">
+                Technologies: C++, QC Console, GMock, GTest, LCOV, Bazel
+              </p>
+            </div>
+            <!-- Project Card: Physiosight -->
+            <div
+              class="bg-cardDark p-6 rounded-lg shadow-lg border border-borderDark fade-in"
+            >
+              <h3 class="text-2xl font-bold text-primary mb-2">Physiosight</h3>
+              <p class="text-lg font-semibold text-white mb-2">
+                Software Engineer | Jan 2022 - July 2023
+              </p>
+              <p class="text-textLight mb-4">
+                An internal project that delivers virtual physiotherapy using
+                posture tracking and real-time motion feedback. It leverages
+                computer vision and biomechanical analysis to monitor body
+                alignment and detect incorrect movements during rehabilitation
+                exercises.
+              </p>
+              <p class="font-semibold text-white">
+                Technologies: Unity, C#, Cross-platform Development, MediaPipe
+              </p>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <!-- Education Section -->
+      <section
+        id="education"
+        class="py-20 p-4 bg-cardDark border-t border-borderDark"
+      >
+        <div class="container mx-auto max-w-5xl">
+          <h2 class="text-4xl font-bold text-center mb-12 text-white fade-in">
+            Education
+          </h2>
+          <div class="flex flex-col space-y-8">
+            <!-- Education Item 1 -->
+            <div
+              class="bg-backgroundDark p-6 rounded-lg shadow-lg border border-borderDark fade-in"
+            >
+              <h3 class="text-xl font-bold text-primary">
+                B.Tech in Computer Science and Engineering
+              </h3>
+              <p class="text-textLight">
+                St. Joseph Engineering College Vamanjoor Mangalore, Karnataka
+              </p>
+              <p class="text-sm text-gray-400">2015 – 2018</p>
+            </div>
+            <!-- Education Item 2 -->
+            <div
+              class="bg-backgroundDark p-6 rounded-lg shadow-lg border border-borderDark fade-in"
+            >
+              <h3 class="text-xl font-bold text-primary">
+                Diploma in Computer Science and Engineering
+              </h3>
+              <p class="text-textLight">Govt. Polytechnic Karwar, Karnataka</p>
+              <p class="text-sm text-gray-400">2012 – 2015</p>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <!-- Contact Section -->
+      <section
+        id="contact"
+        class="py-20 p-4 bg-backgroundDark border-t border-borderDark"
+      >
+        <div class="container mx-auto max-w-5xl">
+          <h2 class="text-4xl font-bold text-center mb-12 text-white fade-in">
+            Get In Touch
+          </h2>
+          <div
+            class="flex flex-col md:flex-row space-y-8 md:space-y-0 md:space-x-8"
+          >
+            <!-- Contact Form -->
+            <div
+              class="md:w-2/3 bg-cardDark p-8 rounded-lg shadow-lg border border-borderDark fade-in"
+            >
+              <h3 class="text-2xl font-bold text-primary mb-4">
+                Send a Message
+              </h3>
+              <form id="contact-form" class="space-y-4">
+                <div>
+                  <label
+                    for="name"
+                    class="block text-textLight font-semibold mb-2"
+                    >Name</label
+                  >
+                  <input
+                    type="text"
+                    id="name"
+                    name="name"
+                    class="w-full p-3 rounded-lg border border-borderDark bg-backgroundDark focus:outline-none focus:ring-2 focus:ring-primary transition-all duration-300"
+                    required
+                  />
+                </div>
+                <div>
+                  <label
+                    for="email"
+                    class="block text-textLight font-semibold mb-2"
+                    >Email</label
+                  >
+                  <input
+                    type="email"
+                    id="email"
+                    name="email"
+                    class="w-full p-3 rounded-lg border border-borderDark bg-backgroundDark focus:outline-none focus:ring-2 focus:ring-primary transition-all duration-300"
+                    required
+                  />
+                </div>
+                <div>
+                  <label
+                    for="message"
+                    class="block text-textLight font-semibold mb-2"
+                    >Message</label
+                  >
+                  <textarea
+                    id="message"
+                    name="message"
+                    rows="5"
+                    class="w-full p-3 rounded-lg border border-borderDark bg-backgroundDark focus:outline-none focus:ring-2 focus:ring-primary transition-all duration-300"
+                    required
+                  ></textarea>
+                </div>
+                <button
+                  type="submit"
+                  class="w-full bg-primary text-white font-semibold py-3 px-6 rounded-lg shadow-lg hover:bg-blue-700 transition-colors duration-300"
+                >
+                  Send Message
+                </button>
+              </form>
+            </div>
+            <!-- Contact Info -->
+            <div
+              class="md:w-1/3 bg-cardDark p-8 rounded-lg shadow-lg border border-borderDark fade-in"
+            >
+              <h3 class="text-2xl font-bold text-primary mb-4">Contact Info</h3>
+              <ul class="space-y-4 text-textLight text-lg">
+                <li>
+                  <i class="fas fa-envelope text-accent mr-2"></i
+                  ><a
+                    href="mailto:nagarajgh1994@gmail.com"
+                    class="hover:underline"
+                    >nagarajgh1994@gmail.com</a
+                  >
+                </li>
+                <li>
+                  <i class="fas fa-phone-alt text-accent mr-2"></i
+                  ><a href="tel:8095433071" class="hover:underline"
+                    >8095433071</a
+                  >
+                </li>
+              </ul>
+              <h3 class="text-2xl font-bold text-primary mt-8 mb-4">
+                Connect with me
+              </h3>
+              <div class="flex space-x-4 text-2xl">
+                <a
+                  href="#"
+                  target="_blank"
+                  class="hover:text-primary transition-colors duration-300"
+                  ><i class="fab fa-linkedin"></i
+                ></a>
+                <a
+                  href="https://github.com/nagarajgh"
+                  target="_blank"
+                  class="hover:text-primary transition-colors duration-300"
+                  ><i class="fab fa-github"></i
+                ></a>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+    </main>
+
+    <!-- Footer -->
+    <footer class="py-6 text-center bg-cardDark border-t border-borderDark">
+      <p class="text-gray-400">&copy; 2024 Nagaraj H. All rights reserved.</p>
+    </footer>
+
+    <!-- JS for Animations and Navigation -->
+    <script>
+      // Mobile Menu Toggle
+      const mobileMenuButton = document.getElementById("mobile-menu-button");
+      const mobileMenu = document.getElementById("mobile-menu");
+
+      mobileMenuButton.addEventListener("click", () => {
+        mobileMenu.classList.toggle("hidden");
+      });
+
+      // Close mobile menu on link click
+      mobileMenu.querySelectorAll("a").forEach((link) => {
+        link.addEventListener("click", () => {
+          mobileMenu.classList.add("hidden");
+        });
+      });
+
+      // Fade-in on Scroll Animation
+      const fadeIns = document.querySelectorAll(".fade-in");
+      const observerOptions = {
+        root: null,
+        rootMargin: "0px",
+        threshold: 0.1,
+      };
+
+      const observer = new IntersectionObserver((entries, observer) => {
+        entries.forEach((entry) => {
+          if (entry.isIntersecting) {
+            entry.target.classList.add("is-visible");
+            observer.unobserve(entry.target);
+          }
+        });
+      }, observerOptions);
+
+      fadeIns.forEach((el) => observer.observe(el));
+
+      // Active navigation link on scroll
+      const navLinks = document.querySelectorAll(".nav-link");
+      const sections = document.querySelectorAll("main section");
+
+      window.addEventListener("scroll", () => {
+        let current = "";
+        sections.forEach((section) => {
+          const sectionTop = section.offsetTop;
+          if (pageYOffset >= sectionTop - 60) {
+            current = section.getAttribute("id");
+          }
+        });
+
+        navLinks.forEach((link) => {
+          link.classList.remove("active");
+          if (link.href.includes(current)) {
+            link.classList.add("active");
+          }
+        });
+      });
+
+      // Contact form submission
+      const contactForm = document.getElementById("contact-form");
+      contactForm.addEventListener("submit", function (event) {
+        event.preventDefault();
+        const name = document.getElementById("name").value;
+        const email = document.getElementById("email").value;
+        const message = document.getElementById("message").value;
+
+        const subject = `New message from ${name}`;
+        const body = `Name: ${name}\nEmail: ${email}\n\nMessage:\n${message}`;
+
+        window.location.href = `mailto:nagarajgh1994@gmail.com?subject=${encodeURIComponent(
+          subject
+        )}&body=${encodeURIComponent(body)}`;
+      });
+    </script>
+  </body>
+</html>
